@@ -15,7 +15,6 @@ Gem::Specification.new do |gem|
   gem.homepage = "http://github.com/radiospiel/sinatra-sse"
   gem.summary  = "Sinatra support for server sent events"
 
-  gem.add_dependency "expectation"
   gem.add_dependency "sinatra"
   
   gem.description = gem.summary

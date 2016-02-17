@@ -3,8 +3,6 @@
 # Copyright (c) 2011, 2012 @radiospiel
 # Distributed under the terms of the modified BSD license, see LICENSE.BSD
 
-require "expectation"
-
 #
 # packing/unpacking SSE events
 module Sinatra::SSE::Marshal
@@ -18,8 +16,6 @@ module Sinatra::SSE::Marshal
   #
   # The object must be a hash or a String.
   def marshal(object)
-    expect! object => [ String, Hash ]
-    
     if object.is_a?(String)
       object = { :data => object }
     end
